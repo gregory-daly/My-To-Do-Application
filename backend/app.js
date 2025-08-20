@@ -15,6 +15,10 @@ const app = express();
 
 const port = 3000; //Port number for localhost
 
+
+const dotenv = require("dotenv");
+dotenv.config();
+
 const mongoDBConnectionString = process.env.mongoDBConnectionString;  //Connect to MongoDB using connection string (25-A Project Cluster0) and the specific DB ("todoDB")
 
 //Importing model
