@@ -205,7 +205,7 @@ async function updateItem(itemToUpdate) {
 
     // console.log(text);
     
-    const updateURL=`http://www.localhost:3000/todosdate/${_id}`;
+    const updateURL=`const url = "https://my-to-do-app-frontend.vercel.app/todosdate/${_id}`; //update wiht vercel
      //console.log(updateURL);
     
     input.value = text;
@@ -243,7 +243,7 @@ async function updateDate(itemToUpdate) {
 
     // console.log(text);
     
-    const updateURL=`http://www.localhost:3000/todosupdate/${_id}`;
+    const updateURL=`https://my-to-do-app-frontend.vercel.app/todosupdate/${_id}`; //Update with versel
      //console.log(updateURL);
     
    let  update =new Date(dateInput.value);
