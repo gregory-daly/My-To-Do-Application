@@ -5,8 +5,9 @@ const todaysDate = new Date().toLocaleDateString("en-AU",options)
 today.innerHTML = todaysDate;
 
 // Define the URL for out HTTP requests.
-const url = "http://localhost:3000/todosdate";
+const url = "https://my-to-do-app-frontend.vercel.app/todosdate" // Update from Vercel backend
 
+//"http://localhost:3000/todosdate"; 
 let count = 0; // count the documents.
 
 async function getTodos(){
