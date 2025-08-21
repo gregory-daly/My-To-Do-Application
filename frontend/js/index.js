@@ -5,7 +5,7 @@ const todaysDate = new Date().toLocaleDateString("en-AU",options)
 today.innerHTML = todaysDate;
 
 // Define the URL for out HTTP requests.
-const url = "https://my-to-do-app-frontend.vercel.app/todosdate" // Update from Vercel backend
+const url = "https://my-to-do-app-backend.vercel.app/todosdate" // Update from Vercel backend
 
 //"http://localhost:3000/todosdate"; 
 let count = 0; // count the documents.
@@ -205,7 +205,7 @@ async function updateItem(itemToUpdate) {
 
     // console.log(text);
     
-    const updateURL=`const url = "https://my-to-do-app-frontend.vercel.app/todosdate/${_id}`; //update wiht vercel
+    const updateURL=`const url = "https://my-to-do-app-backend.vercel.app/todosdate/${_id}`; //update wiht vercel
      //console.log(updateURL);
     
     input.value = text;
@@ -243,7 +243,7 @@ async function updateDate(itemToUpdate) {
 
     // console.log(text);
     
-    const updateURL=`https://my-to-do-app-frontend.vercel.app/todosupdate/${_id}`; //Update with versel
+    const updateURL=`https://my-to-do-app-backend.vercel.app/todosupdate/${_id}`; //Update with versel
      //console.log(updateURL);
     
    let  update =new Date(dateInput.value);
