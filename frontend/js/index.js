@@ -205,7 +205,7 @@ async function updateItem(itemToUpdate) {
 
     // console.log(text);
     
-    const updateURL=`const url = "https://my-to-do-app-backend.vercel.app/todosdate/${_id}`; //update wiht vercel
+    const updateURL=`https://my-to-do-app-backend.vercel.app/todosdate/${_id}`; //update wiht vercel
      //console.log(updateURL);
     
     input.value = text;
