@@ -1,5 +1,4 @@
 // Import Express to your project
-
 // import express, { urlencoded } from 'express';  // es 6 method
 
 const express = require("express"); // using common js method Handles the API Endpoint (HTTP Request)
@@ -9,15 +8,13 @@ const mongoose = require("mongoose");
 
 const app = express();
 
-
 // Using ES6 imports - connect to Database MongoDB
 // import mongoose from 'mongoose';
 
-const port = 3000; //Port number for localhost
-
-
-const dotenv = require("dotenv");
+const dotenv = require("dotenv"); // Using Environment Variables must install dotenv package first.
 dotenv.config();
+
+const port = process.env.portNumber; //Port number for localhost in Environment file
 
 const mongoDBConnectionString = process.env.mongoDBConnectionString;  //Connect to MongoDB using connection string (25-A Project Cluster0) and the specific DB ("todoDB")
 
