@@ -174,7 +174,7 @@ async function deleteItem(id){
     console.log(id);
 
     //Updating the URL to match the Id of deleted Item
-    const url=`http://www.localhost:3000/todosdate/${id}`;
+    const url=`https://my-to-do-app-backend.vercel.app/todosdate/${id}`;
 
     try {
         const option = {
